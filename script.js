@@ -26,7 +26,7 @@ function MultiChoiceSelector(input, options){
   //  not amazing, should add option for users to override
   function addStyle(){
 	  var style = document.createElement('style');
-    style.innerHTML = '.multi-select-option img, .multi-select-option-other img { width: 15px; vertical-align: middle }';
+    style.innerHTML = '.multi-select-option img, .multi-select-option-other img { width: 15px; vertical-align: middle; margin: 0 0.2em; }';
     document.querySelector('head').appendChild(style);
   }
 
