@@ -21,6 +21,14 @@ function MultiChoiceSelector(input, options){
       parent.appendChild(child);
     })
   }
+  
+  //add some css styles 
+  //  not amazing, should add option for users to override
+  function addStyle(){
+	  var style = document.createElement('style');
+    style.innerHTML = '.multi-select-option img, .multi-select-option-other img { width: 15px; vertical-align: middle }';
+    document.querySelector('head').appendChild(style);
+  }
 
   function _create(type, id, classList){
     var el = document.createElement(type);
@@ -122,6 +130,7 @@ function MultiChoiceSelector(input, options){
   }
 
   function init(){
+    addStyle()
     createCbsForOptions();
     render();
   }
