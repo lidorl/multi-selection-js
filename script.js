@@ -126,7 +126,8 @@ function MultiChoiceSelector(input, options){
     hideInput();
     createContainer();
     addCbsToContainer();
-    createOtherCbAndInput();
+    if (_shouldAddOther)
+    	createOtherCbAndInput();
   }
 
   function init(){
